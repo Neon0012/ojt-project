@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 }
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+}
+
+.windowt {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #F4F7F6;
+  /* A very light grey background for the whole app */
+}
