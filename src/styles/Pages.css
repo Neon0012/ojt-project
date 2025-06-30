@@ -9,6 +9,31 @@
     background-color: darkblue;
 }
 
+.video-container{
+  margin: 30px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 900px;
+  background-color: #000; /* Black background to match video edges */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.course-video {
+  width: 100%;
+  display: block;
+  border-bottom: 4px solid #000; /* creates black bar separation */
+}
+.video-caption {
+  background-color: #F0F0F0;
+  text-align: center;
+  padding: 10px;
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+
 .explore{
     background-color: rgb(12, 157, 12);
     color: white;
@@ -17,24 +42,55 @@
     border-radius: 8px;
 }
 
-
-.page-container {
-  max-width: 960px;
-  /* Max width for content to prevent it from stretching too wide */
-  height: 500px;
-  margin: 20px auto;
-  /* Center the content with some top/bottom margin */
-  padding: 20px;
-  background-color: #FFFFFF;
-  /* White background for page content */
-  border-radius: 8px;
-  /* Slightly rounded corners */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  /* Subtle shadow */
+.animate{
+ /* animation: fadeInUptoBottom 1s ease-out forwards; */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.animate-fade-in-up {
-  animation: fadeInUptoBottom 1s ease-out forwards;
-  /* 1s duration, smooth ease-out, stays at end state */
-  /* You might want to add animation-delay if multiple elements animate in sequence */
+.scroll-box-container-home{
+   background-color: white;
+  width: 62%;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow-y: auto;
+  padding: 20px;
+  flex: 1;
+  max-height: 70vh;
+}
+
+
+
+.window {
+  /*min-height: 100vh;
+  display: flex; */
+  background-color: aqua;
+  justify-content: center;
+  overflow: auto;
+}
+
+.eligibility-table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.eligibility-table th,
+.eligibility-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.eligibility-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
 }

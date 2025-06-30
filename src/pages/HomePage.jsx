@@ -5,12 +5,19 @@ const HomePage = () => {
     return(
         <div>
             <Header/>
-            <div className="page-container" style={{ overflow: "auto" }}>
-            <div className="hero-section">
+           <div className="scroll-box-container-home" style={{backgroundColor: 'white'}}>
+           <div className="hero-section">
+            <img
+          src="/Images/college-banner-Cz0xylpt.png"
+          alt="Vivekanand College Campus"
+          className="hero-banner-image"
+          />
+          <div className="hero-overlay-text">
            <h1>Welcome to Vivekanand College!</h1> 
            
            <p>Your journey to excellence starts here.</p>
            <Link to="/admission" className="btn"  >Apply now!</Link>
+           </div>
             </div>
 
            <p>Vivekanand College is a premier educational institution dedicated to fostering academic excellence, innovation, and holistic development. Established in 1980, we have proudly served generations of students, empowering them to achieve their full potential.</p>
@@ -26,15 +33,17 @@ const HomePage = () => {
            </ul>
 
            <h2>Campus Life & Facilities</h2>
-           <div className="image-row img" style={{ display: 'flex', justifyContent: 'left', gap: '20px'}}>
-            <img alt="Students studying in library" src="/Images/students-studying-DbLGuwF_.jpeg" style={{height:'auto', width: '200px'}}/>
-            <img alt="Students on campus ground" src="/Images/campus-life-Crkero7B.jpg" style={{height:'auto', width: '200px'}}/>
+           <div className="image-row img" style={{ display: 'flex', justifyContent: 'center', gap: '20px'}}>
+            <img alt="Students studying in library" src="/Images/students-studying-DbLGuwF_.jpeg" style={{height:'auto', width: '400px'}}/>
+            <img alt="Students on campus ground" src="/Images/campus-life-Crkero7B.jpg" style={{height:'auto', width: '400px'}}/>
            </div>
 
             <p>Explore our vibrant campus and state-of-the-art facilities designed to enhance your learning experience and personal growth.</p>
-            <p style={{textAlign:"center"}}>Ready to explore our courses?</p>
             
+            <div style={{textAlign: 'center'}}>
+            <p>Ready to explore our courses?</p>
             <Link to="/courses" className="explore">Explore Courses</Link>
+            </div>
             </div>
         </div>
 

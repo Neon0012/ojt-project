@@ -1,13 +1,17 @@
 import { Link } from "react-router-dom";
+import Header from "../components/Header/Header";
 
 const AdmissionPage = () => {
     return (
         <div>
-            <h1 style={{color: "blue"}}>Admissions at Vivekanand College</h1>
+            <Header/>
+            <div className="scroll-box-container-home" style={{backgroundColor: 'white', justifyContent: 'center'}}>
+            <h1 style={{color: 'dodgerblue', textAlign:'center'}}>Admissions at Vivekanand College</h1>
             <p>Welcome to the Admissions page of Vivekanand College! We are delighted you're considering joining our vibrant academic community. Our admission process is designed to be straightforward and accessible.</p>
             <p>Please review the eligibility criteria and key dates below for the upcoming academic year. For any queries, feel free to contact our admissions office.</p>
             
             <h2>Eligibility Criteria for Undergraduate Programs</h2>
+            <div className="eligibility-table">
             <table border="2">
                     <thead>
                         <tr>
@@ -38,7 +42,7 @@ const AdmissionPage = () => {
                         </tr>
                     </tbody>
                 </table>
-
+                </div>
             <h2>Application Process</h2>
             <ol>
                 <li><strong>Online Application:</strong> Fill out the application form available on our portal.</li>
@@ -49,7 +53,7 @@ const AdmissionPage = () => {
 
                 <p>For detailed information on postgraduate program admissions, specific program syllabi, and fee structures, please visit our <Link to="/courses"><u>Cources</u></Link> or <Link to="/contact"><u>Contact</u></Link> us directly.</p>
             </ol>
-
+            </div>
         </div>
     )
 }

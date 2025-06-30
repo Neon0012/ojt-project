@@ -1,19 +1,20 @@
+import { Link } from "react-router-dom";
 import Header from "../components/Header/Header";
 
 const CoursesPage = () => {
     return(
         <div>
-             <div className="scroll-box-container-home" style={{backgroundColor:'white'}}>
             <Header/>
-           <h1 style={{color: "blue" , textAlign: "center"}}>Our Academic Programs</h1> 
+             <div className="scroll-box-container-home" style={{backgroundColor:'white'}}>
+           <h1 style={{color: 'dodgerblue' , textAlign: "center"}}>Our Academic Programs</h1> 
            <p>Vivekanand College offers a comprehensive range of undergraduate and postgraduate programs designed to equip students with the knowledge and skills demanded by today's dynamic global landscape. Our curriculum is regularly updated to reflect industry trends and academic advancements.</p>
            <h2>Discover Campus Life</h2>
            <div className="video-container">
-            <p className="video-caption">Get a glimpse of the vibrant academic and social life at Vivekanand College.</p>
-            <video controls width="50%">    
+            <video controls className="course-video">    
                 <source src="/Videos/college-tour-FAmcnyfF.mp4" type="video/mp4"/>
             </video>
-
+            <p className="video-caption"><em>Get a glimpse of the vibrant academic and social life at Vivekanand College.</em></p>
+             </div>
             <h2>Undergraduate Programs (UG)</h2>
             <ul><li><strong>Bachelor of Science (B.Sc.)</strong></li>
                 <ul>
@@ -45,6 +46,7 @@ const CoursesPage = () => {
             </ul>
 
             <h2>Program Details & Fee Structure (Annual)</h2>
+            <div className="eligibility-table">
             <table border="2">
                 <thead>
                     <tr>
@@ -79,10 +81,13 @@ const CoursesPage = () => {
                     </tr>
                 </tbody>
             </table>
-
+            </div>
             <h2>Specialized & Vocational Courses</h2>
             <p>In addition to traditional degree programs, we offer various certificate and diploma courses in areas like Digital Marketing, Web Development, Data Analytics, and Soft Skills Development, providing specialized training for career enhancement.</p>
-            <p style={{textAlign: "center"}}>Have questions about a specific course?</p>
+            <div style={{textAlign:'center'}}>
+            <p>Have questions about a specific course?</p>
+            <Link to="/contact" className="btn">Inquiry about courses</Link>
+           
            </div>
            </div>
         </div>

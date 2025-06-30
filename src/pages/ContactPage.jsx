@@ -4,9 +4,9 @@ import Header from "../components/Header/Header";
 const ContactPage = () => {
     return(
         <div>
-            <div className="scroll-box-container-home" style={{backgroundColor:'white'}}>
             <Header/>
-                <h1 style={{color: "blue"}}>Contact Us</h1>
+            <div className="scroll-box-container-home" style={{backgroundColor: 'white'}}>
+                <h1 style={{color: 'dodgerblue' , textAlign:'center'}}>Contact Us</h1>
                 <p>We'd love to hear from you! Whether you have questions about admissions, programs, or campus life, our team is here to help.</p>
 
                 <h2>General Enquiries</h2>
@@ -22,7 +22,7 @@ const ContactPage = () => {
 
                 <h2>Find Us on the Map</h2>
 
-                <Link to="/https://maps.app.goo.gl/mPBhhfoPPwJnJoSJA"><u>View on Google Maps</u></Link>
+                <Link to="https://maps.google.com/?q=Vivekanand+College" target="_blank" rel="noopener noreferrer"><u>View on Google Maps</u></Link>
                 <h2>Send Us a Message</h2>
                 <p>[A contact form with fields for Name, Email, Subject, Message can be added here.]</p>
         </div>
